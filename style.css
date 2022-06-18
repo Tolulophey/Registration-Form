@@ -5,9 +5,6 @@
 }
 body {
   box-sizing: border-box;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   background-color: #0e0e0e;
   background-color: white;
   width: 70%;
@@ -26,8 +23,16 @@ body {
   padding: 50px;
   background-color: hsl(0, 100%, 74%);
   background-image: url(./images/bg-desktop.png);
-  transition: background-color ease 300ms;
   background-repeat: no-repeat;
+  animation-name: square;
+  animation-duration: 1s;
+}
+
+@keyframes square {
+  from {background-color: red;}
+  to {background-color: hsl(0, 100%, 74%);
+  color: white;}
+
 }
 .left {
   width: 50%;
