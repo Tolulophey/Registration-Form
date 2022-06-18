@@ -116,7 +116,7 @@ body {
   .container {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: hsl(0, 100%, 74%);
     background-image: url(./images/bg-intro-mobile.png);
     background-position: center;
