@@ -20,16 +20,14 @@ body {
   width: 100%;
   height: auto;
   margin:0 auto;
-  padding: 50px;
+  padding: 50px 30px;
   background-color: hsl(0, 100%, 74%);
   background-image: url(./images/bg-desktop.png);
   background-repeat: no-repeat;
   animation-name: square;
   animation-duration: 1s;
 }
-input[type="text"]:focus{
-  border: 2px solid brown;
-}
+
 @keyframes square {
   from {background-color: red;}
   to {background-color: hsl(0, 100%, 74%);
@@ -39,9 +37,7 @@ input[type="text"]:focus{
 .left {
   width: 50%;
   margin: auto;
-  margin-left: 50px;
-  margin-right: 50px;
-
+  padding-left: 30px;
 }
 .left > h2 {
   width: 400px;
@@ -56,7 +52,7 @@ input[type="text"]:focus{
 .right {
   width: 50%;
   margin: auto;
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 form {
@@ -152,7 +148,7 @@ input[type="submit"] {
   color: #b72234;
   font-weight: bold;
 }
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 900px), (max-width: 1200px)  {
 body {
     width: 100%;
     height: 100%;
@@ -201,13 +197,16 @@ body {
 .left,
 .right {
     width: 100%;
-    margin: auto;
     text-align: center;
   }
 .left {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto ;
+    padding: 0;
   }
+.right{
+  padding:0;
+  margin: 0;
+}
 form {
     width: 100%;
   }
@@ -219,6 +218,9 @@ form {
 .left > p {
     font-size: 20px;
     width: auto;
+  }
+  .subscribe{
+    width: 100%;
   }
   .subscribe p{
     width: 50%;
