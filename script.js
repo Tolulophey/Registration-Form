@@ -37,7 +37,7 @@ function checkInputs() {
   }
 
   if (passwordValue === "") {
-    setErrorFor(password, "Last Name cannot be empty");
+    setErrorFor(password, "Password cannot be empty");
   } else {
     setSuccessFor(password);
   }
