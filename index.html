@@ -24,12 +24,28 @@
         <div class="subscribe">
             <p><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
-        <form action="">
-          <input type="text" id="fname" name="fname" placeholder="First Name" />
-          <input type="text" name="lname" placeholder="Last Name" />
-          <input type="email" name="email" placeholder="Email Address" />
-          <input type="password" name="password" placeholder="Password" />
-          <input
+        <form id="form">
+          <div class="form-control">
+          <input type="text" id="fname" name="fname" placeholder="First Name"/>
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <small>Error Message</small>
+          </div>
+          <div class="form-control">
+          <input type="text" id="lname" name="lname" placeholder="Last Name" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <small>Error Message</small>
+          </div>
+          <div class="form-control">
+          <input type="email" id="email" name="email" placeholder="Email Address" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <small>Error Message</small>
+          </div>
+          <div class="form-control">
+          <input type="password" id="password" name="password" placeholder="Password" />
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <small>Error Message</small>
+          </div>
+           <input
             type="submit"
             id="submit"
             name="submit"
@@ -39,6 +55,7 @@
             By clicking the button you are agreeing to our
             <span class="tandc">Terms and Policies</span>
           </p>
+
         </form>
       </div>
     </main>
